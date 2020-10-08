@@ -5,4 +5,4 @@ services:
       dockerfile: ./Dockerfile
       context: .
     volumes:
-      - .:/classes/cp264
+      - .:/classes
