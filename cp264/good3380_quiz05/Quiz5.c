@@ -1,4 +1,4 @@
-#include <stdio.h> //i686-w64-mingw32-gcc main.c -o main.exe
+#include <stdio.h>
 #include <stdlib.h>
 
 struct Node{
@@ -8,99 +8,74 @@ struct Node{
 
 // function prototypes
 struct Node* newNode(int key); // create a new binary tree node having given key
-// void inorder(struct Node* root); // recursive function to perform in-order traversal of a binary tree
-void inorder(struct Node* root, int layer); // recursive function to perform in-order traversal of a binary tree
-struct Node* constructBST(int preorder[], int start, int end); //recursive function to build a BST from a preorder sequence
+void inorder(struct Node* root); // recursive function to perform in-order traversal of a binary tree
+struct Node* constructBST(int preorder[], int start, int end); // recursive function to build a BST from a preorder sequence
+int isBST(struct Node* node); // check if the given tree is a BST
+
 
 int main(int argc, char *argv[]) {
   setbuf(stdout, NULL); // turns standard output buffering off
 
-  int keys[] = {15, 10, 8, 12, 20, 16, 25};
-  int len = sizeof(keys) / sizeof(keys[0]);
-  struct Node *root = constructBST(keys, 0, len);
+  int keys[] = {15, 10, 20, 12, 8, 16, 25};
+  int len = sizeof(keys) / sizeof(keys[0]); // get length of array
+  struct Node *root = constructBST(keys, 0, len); // construct the tree
 
-  inorder(root, 0);
+  inorder(root); // print out tree in order
+
+  printf("\nisBST: %d", isBST(root)); // check if tree is a valid BST
 
   return (0);
 }
 
 struct Node* newNode(int key){
-  struct Node *p = (struct Node *)malloc(sizeof(struct Node));
-  p->key = key;
+  struct Node *p = (struct Node *)malloc(sizeof(struct Node)); // create new node +pointer and allocate space for it in memory
+  p->key = key; // fill node
   p->left = NULL;
   p->right = NULL;
 
   return p;
 }
 
-// void inorder(struct Node* root){
-//   if (root != NULL){
-//     inorder(root->left);
-//     printf("%d ", root->key);
-//     inorder(root->right);
-//   }
-
-//   return;
-// }
-
-void inorder(struct Node* root, int layer){
+void inorder(struct Node* root){
   if (root != NULL){
-    inorder(root->left, layer+1);
-    printf("[%d]%d ", layer, root->key);
-    inorder(root->right, layer+1);
+    inorder(root->left); // recursively print left sub-tree
+    printf("%d ", root->key);
+    inorder(root->right); // recursively print right sub-tree
   }
 
   return;
 }
 
-// struct Node* constructBST(int preorder[], int start, int end){
-//   struct Node *parent = newNode(preorder[0]);
-
-//   for (int i = 1; i < end; i++){
-//     struct Node *node = newNode(preorder[i]);
-//     struct Node *current = parent;
-//     int found = 0;
-
-//     while (!found){
-//       if (node->key < current->key){
-//         if (current->left != NULL){
-//           current = current->left;
-//         } else {
-//           current->left = node;
-//           found = 1;
-//         }
-//       } else if (node->key > current->key){
-//         if (current->right != NULL){
-//           current = current->right;
-//         } else {
-//           current->right = node;
-//           found = 1;
-//         }
-//       } else {
-//         // fuch its equal
-//         found = 1;
-//       }
-//     }
-//   }
-
-//   return parent;
-// }
-
 struct Node* constructBST(int preorder[], int start, int end){
-  if (start < end){
-    struct Node *root = newNode(preorder[start]);
+  if (start < end){ // check if at the end of the sub-tree
+    struct Node *root = newNode(preorder[start]); // create new 'root' for the sub-tree
 
-    if (preorder[start + 1] < preorder[start]){
-      root->left = constructBST(preorder, start + 1, end);
-    } else if (preorder[start + 1] > preorder[start]){
-      root->right = constructBST(preorder, start + 1, end);
-    }
+    int i = start;
+    while (preorder[i] <= preorder[start] && i < end) i++; // find first number larger than root
 
-    // root->left = constructBST(preorder, 2*start+1, end);
-    // root->right = constructBST(preorder, 2*start+2, end);
+    root->left = constructBST(preorder, start+1, i); // recursively construct left sub-tree
+    root->right = constructBST(preorder, i, end); // recursively construct right sub-tree
 
     return root;
   }
 
   return NULL;
+}
+
+int isBST(struct Node* node){
+  struct Node *prev = NULL; 
+      
+  if (node != NULL){
+    if (!isBST(node->left)) // check left sub-tree
+      return 0; 
+
+    if (prev != NULL && node->key <= prev->key) // check if the key of the node is within the bounds of its parent
+      return 0; 
+
+    prev = node; // store the child as the new parent
+
+    return isBST(node->right); // check right sub-tree
+  } 
+
+  return 1; 
 }
