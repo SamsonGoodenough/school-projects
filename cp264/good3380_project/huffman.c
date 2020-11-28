@@ -4,7 +4,7 @@
  * This file contains the main program, the structure of the Huffman node
  * and user interface for running your Huffman Encoder/Decoder. 
  * 
- * [huffman.c] programmed by Samson Goodenough (190723380)
+ * [huffman.c] programmed by Samson Goodenough (190723380) and Alex Lau (190786790)
  * Other headers made by other members (check their comments for credit)
  */
 
