@@ -1,0 +1,422 @@
+Initialize a max heap:
+===================== 
+MAX_HEAP_SIZE          = [20]      
+sizeof *source->values = [4]      
+Size of Values array   = [80] bytes
+Heap Capacity = [20]
+Heap size     = [0]
+Max heap [Source] is EMPTY! 
+Max heap [Source] is NOT FULL! 
+
+Enter next Heap Value [-9999 to quit]: 88
+>>> In heapify_up()
+source->size = [1]
+child_idx    = [0]
+parent_idx   = [0]
+child_value  = [88]
+parent_value = [88]
+<<< Returning from heapify_up()
+
+==> INPUT Values: [88 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [88])
+====================== 
+[88 ]
+
+Heap Structure:
+============== 
+88  
+
+
+Enter next Heap Value [-9999 to quit]: 89
+
+>>> In heapify_up()
+source->size = [2]
+child_idx    = [1]
+parent_idx   = [0]
+child_value  = [89]
+parent_value = [88]
+Back from heap_swap =============
+child_value  = [88]
+parent_value = [89]
+=================================
+source->size = [2]
+child_idx    = [0]
+parent_idx   = [0]
+child_value  = [89]
+parent_value = [89]
+<<< Returning from heapify_up()
+
+==> INPUT Values: [88 89 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [89])
+====================== 
+[89 88 ]
+
+Heap Structure:
+============== 
+89  
+88  
+
+
+Enter next Heap Value [-9999 to quit]: 5
+
+
+==> INPUT Values: [88 89 5 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [89])
+====================== 
+[89 88 5 ]
+
+Heap Structure:
+============== 
+89  
+88  5  
+
+
+Enter next Heap Value [-9999 to quit]: 30
+
+>>> In heapify_up()
+source->size = [4]
+child_idx    = [3]
+parent_idx   = [1]
+child_value  = [30]
+parent_value = [88]
+<<< Returning from heapify_up()
+
+==> INPUT Values: [88 89 5 30 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [89])
+====================== 
+[89 88 5 30 ]
+
+Heap Structure:
+============== 
+89  
+88  5  
+30  
+
+
+Enter next Heap Value [-9999 to quit]: 65
+
+>>> In heapify_up()
+source->size = [5]
+child_idx    = [4]
+parent_idx   = [1]
+child_value  = [65]
+parent_value = [88]
+<<< Returning from heapify_up()
+
+==> INPUT Values: [88 89 5 30 65 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [89])
+====================== 
+[89 88 5 30 65 ]
+
+Heap Structure:
+============== 
+89  
+88  5  
+30  65  
+
+
+Enter next Heap Value [-9999 to quit]: 77
+
+>>> In heapify_up()
+source->size = [6]
+child_idx    = [5]
+parent_idx   = [2]
+child_value  = [77]
+parent_value = [5]
+Back from heap_swap =============
+child_value  = [5]
+parent_value = [77]
+=================================
+source->size = [6]
+child_idx    = [2]
+parent_idx   = [0]
+child_value  = [77]
+parent_value = [89]
+<<< Returning from heapify_up()
+
+==> INPUT Values: [88 89 5 30 65 77 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [89])
+====================== 
+[89 88 77 30 65 5 ]
+
+Heap Structure:
+============== 
+89  
+88  77  
+30  65  5  
+
+
+Enter next Heap Value [-9999 to quit]: 21
+
+>>> In heapify_up()
+source->size = [7]
+child_idx    = [6]
+parent_idx   = [2]
+child_value  = [21]
+parent_value = [77]
+<<< Returning from heapify_up()
+
+==> INPUT Values: [88 89 5 30 65 77 21 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [89])
+====================== 
+[89 88 77 30 65 5 21 ]
+
+Heap Structure:
+============== 
+89  
+88  77  
+30  65  5  21  
+
+
+Enter next Heap Value [-9999 to quit]: 89
+
+>>> In heapify_up()
+source->size = [8]
+child_idx    = [7]
+parent_idx   = [3]
+child_value  = [89]
+parent_value = [30]
+Back from heap_swap =============
+child_value  = [30]
+parent_value = [89]
+=================================
+source->size = [8]
+child_idx    = [3]
+parent_idx   = [1]
+child_value  = [89]
+parent_value = [88]
+Back from heap_swap =============
+child_value  = [88]
+parent_value = [89]
+=================================
+source->size = [8]
+child_idx    = [1]
+parent_idx   = [0]
+child_value  = [89]
+parent_value = [89]
+<<< Returning from heapify_up()
+
+==> INPUT Values: [88 89 5 30 65 77 21 89 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [89])
+====================== 
+[89 89 77 88 65 5 21 30 ]
+
+Heap Structure:
+============== 
+89  
+89  77  
+88  65  5  21  
+30  
+
+
+Enter next Heap Value [-9999 to quit]: 13
+
+
+==> INPUT Values: [88 89 5 30 65 77 21 89 13 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [89])
+====================== 
+[89 89 77 88 65 5 21 30 13 ]
+
+Heap Structure:
+============== 
+89  
+89  77  
+88  65  5  21  
+30  13  
+
+
+Enter next Heap Value [-9999 to quit]: 45
+
+>>> In heapify_up()
+source->size = [10]
+child_idx    = [9]
+parent_idx   = [4]
+child_value  = [45]
+parent_value = [65]
+<<< Returning from heapify_up()
+
+==> INPUT Values: [88 89 5 30 65 77 21 89 13 45 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [89])
+====================== 
+[89 89 77 88 65 5 21 30 13 45 ]
+
+Heap Structure:
+============== 
+89  
+89  77  
+88  65  5  21  
+30  13  45  
+
+
+Enter next Heap Value [-9999 to quit]: 64
+
+>>> In heapify_up()
+source->size = [11]
+child_idx    = [10]
+parent_idx   = [4]
+child_value  = [64]
+parent_value = [65]
+<<< Returning from heapify_up()
+
+==> INPUT Values: [88 89 5 30 65 77 21 89 13 45 64 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [89])
+====================== 
+[89 89 77 88 65 5 21 30 13 45 64 ]
+
+Heap Structure:
+============== 
+89  
+89  77  
+88  65  5  21  
+30  13  45  64  
+
+
+Enter next Heap Value [-9999 to quit]: 4
+
+
+==> INPUT Values: [88 89 5 30 65 77 21 89 13 45 64 4 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [89])
+====================== 
+[89 89 77 88 65 5 21 30 13 45 64 4 ]
+
+Heap Structure:
+============== 
+89  
+89  77  
+88  65  5  21  
+30  13  45  64  4  
+
+
+Enter next Heap Value [-9999 to quit]: 10
+
+>>> In heapify_up()
+source->size = [13]
+child_idx    = [12]
+parent_idx   = [5]
+child_value  = [10]
+parent_value = [5]
+Back from heap_swap =============
+child_value  = [5]
+parent_value = [10]
+=================================
+source->size = [13]
+child_idx    = [5]
+parent_idx   = [2]
+child_value  = [10]
+parent_value = [77]
+<<< Returning from heapify_up()
+
+==> INPUT Values: [88 89 5 30 65 77 21 89 13 45 64 4 10 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [89])
+====================== 
+[89 89 77 88 65 10 21 30 13 45 64 4 5 ]
+
+Heap Structure:
+============== 
+89  
+89  77  
+88  65  10  21  
+30  13  45  64  4  5  
+
+
+Enter next Heap Value [-9999 to quit]: 99
+
+>>> In heapify_up()
+source->size = [14]
+child_idx    = [13]
+parent_idx   = [6]
+child_value  = [99]
+parent_value = [21]
+Back from heap_swap =============
+child_value  = [21]
+parent_value = [99]
+=================================
+source->size = [14]
+child_idx    = [6]
+parent_idx   = [2]
+child_value  = [99]
+parent_value = [77]
+Back from heap_swap =============
+child_value  = [77]
+parent_value = [99]
+=================================
+source->size = [14]
+child_idx    = [2]
+parent_idx   = [0]
+child_value  = [99]
+parent_value = [89]
+Back from heap_swap =============
+child_value  = [89]
+parent_value = [99]
+=================================
+source->size = [14]
+child_idx    = [0]
+parent_idx   = [0]
+child_value  = [99]
+parent_value = [99]
+<<< Returning from heapify_up()
+
+==> INPUT Values: [88 89 5 30 65 77 21 89 13 45 64 4 10 99 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [99])
+====================== 
+[99 89 89 88 65 10 77 30 13 45 64 4 5 21 ]
+
+Heap Structure:
+============== 
+99  
+89  89  
+88  65  10  77  
+30  13  45  64  4  5  21  
+
+
+Enter next Heap Value [-9999 to quit]: 78
+
+>>> In heapify_up()
+source->size = [15]
+child_idx    = [14]
+parent_idx   = [6]
+child_value  = [78]
+parent_value = [77]
+Back from heap_swap =============
+child_value  = [77]
+parent_value = [78]
+=================================
+source->size = [15]
+child_idx    = [6]
+parent_idx   = [2]
+child_value  = [78]
+parent_value = [89]
+<<< Returning from heapify_up()
+
+==> INPUT Values: [88 89 5 30 65 77 21 89 13 45 64 4 10 99 78 ]
+
+Contents of Heap Array: (Value at TOP of Heap = [99])
+====================== 
+[99 89 89 88 65 10 78 30 13 45 64 4 5 21 77 ]
+
+Heap Structure:
+============== 
+99  
+89  89  
+88  65  10  78  
+30  13  45  64  4  5  21  77  
+
+
+Enter next Heap Value [-9999 to quit]: -9999
+
+
+::: Program Ended. Till next time.
