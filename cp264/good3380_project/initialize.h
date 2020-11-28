@@ -36,7 +36,6 @@ typedef struct Node {
 	int direction;
 	unsigned int freq;
 	struct Node *left, *right, *next;
-
 } letterNode;
 
 //creates a new huffman tree node, fills it with a given letter with it frequency
@@ -186,14 +185,5 @@ letterNode* initialize(char str[]) {
 	}
 	//returns the root node of the huffman tree
 	return combined;
-
-}
-
-// sample main program to initalize a sample string
-int test_initialize() {
-	char str[] =
-			"this is a short input file composed entirely of \n spaces \n and lowercase letters";
-	letterNode *root = initialize(str);
-	printf("%c, %d\n", root->letter, root->freq);
 
 }

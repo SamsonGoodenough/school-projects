@@ -1,28 +1,32 @@
 /*
  * CP 264 Huffman Coding
  *
- * This file contains the main program,the structure of the Huffman node
+ * This file contains the main program, the structure of the Huffman node
  * and user interface for running your Huffman Encoder/Decoder. 
+ * 
+ * [huffman.c] programmed by Samson Goodenough (190723380)
+ * Other headers made by other members (check their comments for credit)
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "initialize.h"
-#include "encode.h"
+#include <math.h>
+#include "initialize.h" // by: Brian Ha
+#include "encode.h"     // by: Samson Goodenough
+#include "decode.h"     // by: Eric Wildfong
+#include "freeTree.h"   // by: Alex Lau
 
 int main(int argc, char **argv) {
-  argv[1] = "encode";
-  argv[2] = "example.txt";
-  argv[3] = "example.txt";
-  // if (argc != 4) {
-  //   fprintf(stderr,
-  //       "USAGE: ./huffman [encode | decode] "
-  //       "<input file> <output file>\n");
-  //   return 0;
-  // }
+  
+  if (argc != 4 && argc != 5) {
+    fprintf(stderr,
+        "USAGE: ./huffman [encode | decode <source file>] "
+          "<input file> <output file>\n");
+    return 0;
+  }
 
-  FILE *f = fopen(argv[2], "r");
+  FILE *f = fopen(argv[2], "rb");
   if (f){ // fopen is valid
     fseek(f, 0, SEEK_END); // find END OF FILE
     long f_size = ftell(f); // get EOF position
@@ -33,36 +37,23 @@ int main(int argc, char **argv) {
     string[f_size] = '\0'; // add 0-terminated character
     fclose(f); // close the file
 
-    // FILE *w;
-    // w = fopen(output_name, "wb");
-    // fwrite(buffer, sizeof(buffer), 1, w);
+    letterNode *root = initialize(string); // construct tree
 
-    //loop through string and replace each character with its code while writing to file
+    if (strcmp(argv[1], "encode") == 0){
+      encode(root, argv[3], string);
+    } else if (strcmp(argv[1], "decode") == 0){
+      decode(root, argv[3], argv[4]);
+    }
 
-      letterNode *root = initialize(string);
-    printf("%c, %d\n", root->letter, root->freq);
-
-    if (strcmp(argv[1], "encode") == 0)
-      encode(root, argv[3]);
-    else if (strcmp(argv[1], "decode") == 0)
-      // decode(root, argv[2], argv[3]);
-      printf("uncomment decode\n");
-    else
-      fprintf(stderr,
-          "USAGE: ./huffman [encode | decode] "
-          "<input file> <output file>\n");
-
-    // uncomment when coded
-    // free_memory();
+    free_memory(root);
+    root = NULL;
 
   } else { // fopen failed (Segmentation Fault)
     fprintf(stderr,
       "INVALID INPUT FILE: cannot find file '%s'\n", argv[2]);
+    
     return 0;
   }
 
   return 0;
 }
-
-
-
