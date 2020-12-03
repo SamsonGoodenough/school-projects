@@ -1,0 +1,29 @@
+Marking Scheme for: 202001_CP264_Lab10_GraphsAM  Total: 6 Marks)
+===============================================  ===============
+
+- Task-1: Code for "connected(...)"  function = 2
+     
+- Task-2: Code for "node_counts...)" function = 2
+- Task-2: Implement Algorithm Efficiency      = 2  (Stop searching as soon as connection running )   
+                                               --- (count exceeds "count". See lab write-up.     )
+                                        Total   6
+                                        
+Penalties:
+=========
+- Hard-coding                                 = -1
+- Use of Break, Continue, Go To               = -1 (NOTE: Break allowed in "Switch" statement.)
+  (i.e. Spaghetti code)
+- Convoluted logic                            = -1
+- Multiple "return" from main/subprogram      = -1
+- ALL local subprogram variables MUST be
+  declared at the beginning of the subprogram = -1  (Only exception: "for (int i=0; ...)"
+  (not dispersed throughout subprogram body)
+- Project builds/compiles with WARNINGS!      = -1
+
+- NOTE:
+  ====
+    Your project MUST Build/Compile clean and MUST Execute, otherwise a mark of ZERO is given for the lab.
+
+=====================================================================================================
+=====================================================================================================
+
