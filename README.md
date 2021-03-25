@@ -1,7 +1,8 @@
 # Wilfrid Laurier University
 ## School Work
 The following is labs, assignments, and some other resourses that I've collected throughout university thus far.
-*Warning* although I've done quite well in Computer Science not all of this is necessarily correct.
+*Warning, although I've done quite well in Computer Science not all of this is necessarily correct.*
+Included us a Dockerfile used to run Ubuntu for C.
 ***
 ## CP216: Labs - Winter 2021
 ### The Labs ([cpulator](https://cpulator.01xz.net/?sys=arm-de1soc))
