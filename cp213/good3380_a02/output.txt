@@ -1,0 +1,3 @@
+123|Goodenough|Samson|2002-08-03|0,1,2
+234|Goodenough|Samson|2001-08-03|0,4,2
+345|Goodenough|Samson|2000-08-03|0,1,5

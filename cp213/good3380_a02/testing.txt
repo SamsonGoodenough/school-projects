@@ -1,0 +1,275 @@
+Majors:
+ 0: Computer Science
+ 1: Psychology
+ 2: Chemistry
+ 3: Math
+ 4: Business
+ 5: Music
+ 6: English
+ 7: Basket Weaving
+ 8: Women's Studies
+ 9: History
+10: Archaeology
+----------------------------------------
+[1, 2, 3]
+----------------------------------------
+-111
+----------------------------------------
+Computer Science, Psychology, Chemistry
+----------------------------------------
+Name:      Goodenough, Samson
+ID:        123
+Birthdate: 2002-08-03
+Majors:    Computer Science, Psychology, Chemistry
+
+----------------------------------------
+123|Goodenough|Samson|2002-08-03|0,1,2
+----------------------------------------
+----------------------------------------
+[3, 2, 2, 0, 1, 1, 0, 0, 0, 0, 0]
+----------------------------------------
+Name:      Kennes, Montana
+ID:        123
+Birthdate: 2001-04-30
+Majors:    Psychology, Chemistry, Music
+
+----------------------------------------
+Name:      Goodenough, Samson
+ID:        123
+Birthdate: 2002-08-03
+Majors:    Computer Science, Psychology, Chemistry
+
+Name:      Goodenough, Samson
+ID:        345
+Birthdate: 2000-08-03
+Majors:    Computer Science, Psychology, Music
+
+----------------------------------------getByBirthDate
+Name:      Goodenough, Samson
+ID:        123
+Birthdate: 2002-08-03
+Majors:    Computer Science, Psychology, Chemistry
+
+Name:      Goodenough, Samson
+ID:        234
+Birthdate: 2001-08-03
+Majors:    Computer Science, Business, Chemistry
+
+----------------------------------------getByMajors
+Name:      Goodenough, Samson
+ID:        123
+Birthdate: 2002-08-03
+Majors:    Computer Science, Psychology, Chemistry
+
+Name:      Goodenough, Samson
+ID:        234
+Birthdate: 2001-08-03
+Majors:    Computer Science, Business, Chemistry
+
+----------------------------------------
+Name:      Brown, David
+ID:        123456
+Birthdate: 1962-10-25
+Majors:    Computer Science
+
+Name:      Brown, Tasmin
+ID:        923451
+Birthdate: 1995-03-01
+Majors:    Business, Music
+
+Name:      Sharma, Bob
+ID:        874837
+Birthdate: 1994-04-23
+Majors:    Chemistry, English, Basket Weaving
+
+Name:      Yang, Bob
+ID:        873451
+Birthdate: 1995-11-02
+Majors:    Chemistry
+
+Name:      Ahmad, Imran
+ID:        561200
+Birthdate: 1999-02-07
+Majors:    Chemistry, English, Basket Weaving
+
+Name:      Ahmed, Jeremy
+ID:        549640
+Birthdate: 2002-11-19
+Majors:    History
+
+Name:      Ahmed, Jordan
+ID:        988840
+Birthdate: 1996-09-12
+Majors:    Chemistry, English
+
+Name:      Akhtar, Hafsah
+ID:        911240
+Birthdate: 1998-09-17
+Majors:    Chemistry
+
+Name:      Alavi, Kabir
+ID:        156500
+Birthdate: 1997-05-08
+Majors:    Math, English
+
+Name:      Alidina, Jeremy
+ID:        519400
+Birthdate: 1997-01-27
+Majors:    Math
+
+Name:      An, Paige
+ID:        832520
+Birthdate: 1999-09-04
+Majors:    Chemistry, History
+
+Name:      Angst, James
+ID:        580840
+Birthdate: 1997-03-30
+Majors:    Math, Business
+
+Name:      Ashraf, Stany
+ID:        137630
+Birthdate: 2001-04-27
+Majors:    History
+
+Name:      Babra, Nildip
+ID:        412450
+Birthdate: 1997-01-18
+Majors:    Basket Weaving
+
+Name:      Blondell, Stephanie
+ID:        628550
+Birthdate: 1997-04-07
+Majors:    Math, Business
+
+Name:      Broussard, Ayush
+ID:        419300
+Birthdate: 2000-08-19
+Majors:    Chemistry, Women's Studies
+
+Name:      Bui, Graham
+ID:        662090
+Birthdate: 2000-04-13
+Majors:    Chemistry, Women's Studies, History
+
+Name:      Chabikuli, Eric
+ID:        485280
+Birthdate: 1997-10-17
+Majors:    Math, Business
+
+Name:      Chaudhuri, Jordan
+ID:        859360
+Birthdate: 2002-06-10
+Majors:    Computer Science
+
+Name:      Chen, Aleksa
+ID:        271610
+Birthdate: 1996-04-21
+Majors:    Business
+
+Name:      Chhetri, Moe
+ID:        587670
+Birthdate: 1996-10-23
+Majors:    Chemistry
+
+Name:      Djuric, Mohammed
+ID:        451240
+Birthdate: 1996-09-30
+Majors:    Psychology, Archaeology
+
+Name:      Dubrick, Samson
+ID:        723380
+Birthdate: 2000-12-16
+Majors:    Psychology, Business
+
+Name:      Dubrick, Sean
+ID:        317470
+Birthdate: 1996-03-10
+Majors:    Computer Science, Psychology
+
+Name:      Dunovic, Majed
+ID:        436110
+Birthdate: 1999-05-09
+Majors:    History
+
+Name:      Elabed, Melissa
+ID:        491940
+Birthdate: 1996-05-27
+Majors:    Math, Archaeology
+
+Name:      Fazli, Karan
+ID:        373590
+Birthdate: 1997-09-02
+Majors:    Computer Science, Chemistry
+
+Name:      Goodenough, Johnathan
+ID:        963330
+Birthdate: 1996-09-01
+Majors:    Chemistry, Women's Studies
+
+Name:      Grecco, Jody
+ID:        488320
+Birthdate: 1999-11-27
+Majors:    Chemistry, English
+
+Name:      Hadida, Birintan
+ID:        863990
+Birthdate: 1997-05-22
+Majors:    Women's Studies
+
+Name:      Hayalioglu, Bhavya
+ID:        917130
+Birthdate: 2000-03-12
+Majors:    Basket Weaving
+
+Name:      Hayer, Bilal
+ID:        932410
+Birthdate: 1997-08-06
+Majors:    Chemistry, Women's Studies, History
+
+Name:      Huynh, Mohammad
+ID:        867310
+Birthdate: 1996-09-25
+Majors:    Computer Science, Math
+
+Name:      Jin, Sahil
+ID:        990560
+Birthdate: 2002-02-20
+Majors:    Math, Archaeology
+
+Name:      Kandasamy, Aidan
+ID:        930100
+Birthdate: 1998-02-04
+Majors:    Chemistry, English
+
+Name:      Karnavat, Peter
+ID:        865770
+Birthdate: 1998-05-03
+Majors:    Math, Women's Studies
+
+Name:      Khan, Danish
+ID:        630170
+Birthdate: 2002-06-07
+Majors:    Chemistry, English, Basket Weaving
+
+Name:      Khan, Yana
+ID:        250590
+Birthdate: 2000-10-29
+Majors:    Archaeology
+
+Name:      Khasnobish, Michael
+ID:        826320
+Birthdate: 2001-07-13
+Majors:    Psychology, Business, Basket Weaving
+
+Name:      Kilpatrick, Justin
+ID:        610360
+Birthdate: 2001-01-06
+Majors:    Psychology, Business
+
+Name:      Kotsopoulos, Yilang
+ID:        473430
+Birthdate: 2000-04-30
+Majors:    History
+
+----------------------------------------
