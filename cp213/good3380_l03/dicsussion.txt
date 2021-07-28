@@ -1,0 +1,41 @@
+Your Name here
+
+------------------------------------------------------------------
+Task 1:
+
+1. Did any changes have to be made to the Professor class definition 
+in order to add the CAS class?
+
+No, this is why we extend from it.
+
+2. Do the objects print in the expected order?
+
+Yes, ascending by surname.
+
+------------------------------------------------------------------
+Task 2:
+
+1. Are there errors when attempting to override compareTo? How can they be fixed?
+
+Yes there are errors, simply remove the @Override and compareTo only other CAS objects (overloading)
+
+2. Do the comparisons between two different object types work as expected?
+
+Yes, they only compare the surname and forename, ignoring term.
+
+3. Do the comparisons between two CAS objects work as expected?
+
+Yes, it compares them based on the term
+
+------------------------------------------------------------------
+Task 3:
+
+1. Can all of these objects be added? If not, what errors are generated?
+
+None of the Person objects can be added, error is:
+The method add(CAS) in the type TreeSet<CAS> is not applicable for the arguments (Person)
+
+2. For the objects that can be added, what happens when you attempt to print 
+them? Why do you think you get the results you do?
+
+Only the first gets printed since TreeSets won't add duplicates and cas1 and cas2 are duplicates other than their term
