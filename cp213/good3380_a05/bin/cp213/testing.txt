@@ -1,0 +1,381 @@
+Commands:
+q: quit
+d: drop rods
++: raise rods
+-: lower rods
+ENTER: do nothing
+
+Tick: 0
+Rod Depths: 200
+Temperature: 999
+Power:       799
+
+Input: 
+
+Tick: 1
+Rod Depths: 200
+Temperature: 925.9
+Power:       734.1
+
+Input: 
+
+Tick: 2
+Rod Depths: 200
+Temperature: 839.6
+Power:       657.4
+
+Input: 
+
+Tick: 3
+Rod Depths: 200
+Temperature: 746.6
+Power:       574.7
+
+Input: 
+
+Tick: 4
+Rod Depths: 200
+Temperature: 639.9
+Power:       479.9
+
+Input: 
+
+Tick: 5
+Rod Depths: 200
+Temperature: 516.9
+Power:       370.5
+
+Input: 
+
+Tick: 6
+Rod Depths: 200
+Temperature: 384.5
+Power:       252.9
+
+Input: 
+
+Tick: 7
+Rod Depths: 200
+Temperature: 234.5
+Power:       119.6
+
+Input: 
+
+Tick: 8
+Rod Depths: 200
+Temperature: 62.8
+Power:       0
+
+Input: 
+
+----------------------------------
+Status: Shutdown
+Rod Depths: 200
+Tick: 9
+Average Temperature: 521
+Average Power:       398
+
+========================================================================
+Commands:
+q: quit
+d: drop rods
++: raise rods
+-: lower rods
+ENTER: do nothing
+
+Tick: 0
+Rod Depths: 0
+Temperature: 999
+Power:       799
+
+Input: 
+
+----------------------------------
+Status: MELTDOWN!!
+Rod Depths: 0
+Tick: 1
+Average Temperature: 1061
+Average Power:       854
+
+========================================================================
+Commands:
+q: quit
+d: drop rods
++: raise rods
+-: lower rods
+ENTER: do nothing
+
+Tick: 0
+Rod Depths: 0
+Temperature: 999
+Power:       799
+
+Input: d
+
+----------------------------------
+Status: Shutdown
+Rod Depths: 200
+Tick: 0
+Average Temperature: 999
+Average Power:       799
+
+========================================================================
+Commands:
+q: quit
+d: drop rods
++: raise rods
+-: lower rods
+ENTER: do nothing
+
+Tick: 0
+Rod Depths: 0
+Temperature: 999
+Power:       799
+
+Input: q
+
+----------------------------------
+Status: Finished
+Rod Depths: 0
+Tick: 0
+Average Temperature: 999
+Average Power:       799
+
+========================================================================
+Commands:
+q: quit
+d: drop rods
++: raise rods
+-: lower rods
+ENTER: do nothing
+
+Tick: 0
+Rod Depths: 50
+Temperature: 400
+Power:       266
+
+Input: +
+
+Tick: 1
+Rod Depths: 49
+Temperature: 400
+Power:       266.7
+
+Input: +
+
+Tick: 2
+Rod Depths: 48
+Temperature: 400
+Power:       266.7
+
+Input: +
+
+Tick: 3
+Rod Depths: 47
+Temperature: 402
+Power:       268.4
+
+Input: +
+
+Tick: 4
+Rod Depths: 46
+Temperature: 405.2
+Power:       271.3
+
+Input: +
+
+Tick: 5
+Rod Depths: 45
+Temperature: 409.9
+Power:       275.5
+
+Input: +
+
+Tick: 6
+Rod Depths: 44
+Temperature: 419.1
+Power:       283.7
+
+Input: +
+
+Tick: 7
+Rod Depths: 43
+Temperature: 430.5
+Power:       293.8
+
+Input: +
+
+Tick: 8
+Rod Depths: 42
+Temperature: 440.4
+Power:       302.5
+
+Input: -
+
+Tick: 9
+Rod Depths: 43
+Temperature: 449.4
+Power:       310.6
+
+Input: -
+
+Tick: 10
+Rod Depths: 44
+Temperature: 458.6
+Power:       318.7
+
+Input: -
+
+Tick: 11
+Rod Depths: 45
+Temperature: 473.9
+Power:       332.4
+
+Input: -
+
+Tick: 12
+Rod Depths: 46
+Temperature: 484.1
+Power:       341.5
+
+Input: -
+
+Tick: 13
+Rod Depths: 47
+Temperature: 494.6
+Power:       350.8
+
+Input: -
+
+Tick: 14
+Rod Depths: 48
+Temperature: 510.5
+Power:       364.9
+
+Input: -
+
+Tick: 15
+Rod Depths: 49
+Temperature: 526.3
+Power:       378.9
+
+Input: -
+
+Tick: 16
+Rod Depths: 50
+Temperature: 542.1
+Power:       393
+
+Input: -
+
+Tick: 17
+Rod Depths: 51
+Temperature: 559.8
+Power:       408.7
+
+Input: -
+
+Tick: 18
+Rod Depths: 52
+Temperature: 574.8
+Power:       422.1
+
+Input: -
+
+Tick: 19
+Rod Depths: 53
+Temperature: 596.7
+Power:       441.5
+
+Input: -
+
+Tick: 20
+Rod Depths: 54
+Temperature: 614.3
+Power:       457.1
+
+Input: -
+
+Tick: 21
+Rod Depths: 55
+Temperature: 634
+Power:       474.7
+
+Input: -
+
+Tick: 22
+Rod Depths: 56
+Temperature: 655.3
+Power:       493.6
+
+Input: -
+
+Tick: 23
+Rod Depths: 57
+Temperature: 682.2
+Power:       517.5
+
+Input: -
+
+Tick: 24
+Rod Depths: 58
+Temperature: 709.5
+Power:       541.8
+
+Input: -
+
+Tick: 25
+Rod Depths: 59
+Temperature: 738.2
+Power:       567.3
+
+Input: -
+
+Tick: 26
+Rod Depths: 60
+Temperature: 769.4
+Power:       595
+
+Input: -
+
+Tick: 27
+Rod Depths: 61
+Temperature: 806.6
+Power:       628.1
+
+Input: -
+
+Tick: 28
+Rod Depths: 62
+Temperature: 842.4
+Power:       659.9
+
+Input: -
+
+Tick: 29
+Rod Depths: 63
+Temperature: 883.7
+Power:       696.7
+
+Input: -
+
+Tick: 30
+Rod Depths: 64
+Temperature: 928.2
+Power:       736.2
+
+Input: -
+
+Tick: 31
+Rod Depths: 65
+Temperature: 982.2
+Power:       784.2
+
+Input: -
+
+----------------------------------
+Status: MELTDOWN!!
+Rod Depths: 66
+Tick: 32
+Average Temperature: 595
+Average Power:       440
