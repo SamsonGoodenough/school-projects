@@ -1,0 +1,116 @@
+Network Simulator
+Initializing Network Simulator
+Initializing sender: A: 12345
+Initializing receiver: B: 67890
+average = 0.5033190011370157
+---------------------------------------
+A: Sending the data aaaaaaaaaaaaaaaaaaaa
+udtSend: seqNum: 0 ackNum: 0 checksum: 1940 payload: aaaaaaaaaaaaaaaaaaaa
+startTimer: starting timer at 319.769522450404
+---------------------------------------
+B: Receiving the data and sending the acknowledgement aaaaaaaaaaaaaaaaaaaa
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 0 checksum: 0 payload: 
+udtSend: SIMULATING PACKET BEING CORRUPTED
+---------------------------------------
+A: receiving an acknowledgement packet
+---------------------------------------
+A: sending the last packet again
+udtSend: seqNum: 0 ackNum: 0 checksum: 1940 payload: aaaaaaaaaaaaaaaaaaaa
+startTimer: starting timer at 339.769522450404
+---------------------------------------
+B: Receiving the data and sending the acknowledgement aaaaaaaaaaaaaaaaaaaa
+udtSend: seqNum: 0 ackNum: 0 checksum: 0 payload: 
+---------------------------------------
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 345.8722105219021
+---------------------------------------
+A: Sending the data bbbbbbbbbbbbbbbbbbbb
+udtSend: seqNum: 1 ackNum: 0 checksum: 1961 payload: bbbbbbbbbbbbbbbbbbbb
+udtSend: SIMULATING PACKET LOSS
+startTimer: starting timer at 1770.2799531429464
+---------------------------------------
+A: sending the last packet again
+udtSend: seqNum: 1 ackNum: 0 checksum: 1961 payload: bbbbbbbbbbbbbbbbbbbb
+startTimer: starting timer at 1790.2799531429464
+---------------------------------------
+B: Receiving the data and sending the acknowledgement bbbbbbbbbbbbbbbbbbbb
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+---------------------------------------
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 1804.8036243155404
+---------------------------------------
+A: Sending the data cccccccccccccccccccc
+udtSend: seqNum: 0 ackNum: 0 checksum: 1980 payload: cccccccccccccccccccc
+udtSend: SIMULATING PACKET BEING CORRUPTED
+startTimer: starting timer at 2214.448102010033
+---------------------------------------
+B: Receiving the data and sending the acknowledgement cccccccccccccccccccc
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: SIMULATING PACKET BEING CORRUPTED
+---------------------------------------
+A: receiving an acknowledgement packet
+---------------------------------------
+A: sending the last packet again
+udtSend: seqNum: 0 ackNum: 0 checksum: 1980 payload: cccccccccccccccccccc
+startTimer: starting timer at 2234.448102010033
+---------------------------------------
+B: Receiving the data and sending the acknowledgement cccccccccccccccccccc
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 0 checksum: 0 payload: 
+---------------------------------------
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 2250.93944784503
+---------------------------------------
+A: Sending the data dddddddddddddddddddd
+udtSend: seqNum: 1 ackNum: 0 checksum: 2001 payload: dddddddddddddddddddd
+udtSend: SIMULATING PACKET BEING CORRUPTED
+startTimer: starting timer at 3441.091457862043
+---------------------------------------
+B: Receiving the data and sending the acknowledgement =ddddddddddddddddddd
+udtSend: seqNum: 0 ackNum: 0 checksum: 0 payload: 
+---------------------------------------
+A: receiving an acknowledgement packet
+---------------------------------------
+A: sending the last packet again
+udtSend: seqNum: 1 ackNum: 0 checksum: 2001 payload: dddddddddddddddddddd
+startTimer: starting timer at 3461.091457862043
+---------------------------------------
+B: Receiving the data and sending the acknowledgement dddddddddddddddddddd
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: SIMULATING PACKET LOSS
+---------------------------------------
+A: sending the last packet again
+udtSend: seqNum: 1 ackNum: 0 checksum: 2001 payload: dddddddddddddddddddd
+startTimer: starting timer at 3501.091457862043
+---------------------------------------
+B: Receiving the data and sending the acknowledgement dddddddddddddddddddd
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+---------------------------------------
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 3506.793037927554
+---------------------------------------
+A: Sending the data eeeeeeeeeeeeeeeeeeee
+udtSend: seqNum: 0 ackNum: 0 checksum: 2020 payload: eeeeeeeeeeeeeeeeeeee
+udtSend: SIMULATING PACKET BEING CORRUPTED
+startTimer: starting timer at 4320.4466404732175
+do not schedule: the maximum number of messages is scheduled
+---------------------------------------
+B: Receiving the data and sending the acknowledgement =eeeeeeeeeeeeeeeeeee
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: SIMULATING PACKET BEING CORRUPTED
+---------------------------------------
+A: receiving an acknowledgement packet
+---------------------------------------
+A: sending the last packet again
+udtSend: seqNum: 0 ackNum: 0 checksum: 2020 payload: eeeeeeeeeeeeeeeeeeee
+startTimer: starting timer at 4340.4466404732175
+---------------------------------------
+B: Receiving the data and sending the acknowledgement eeeeeeeeeeeeeeeeeeee
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 0 checksum: 0 payload: 
+---------------------------------------
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 4355.00945169014

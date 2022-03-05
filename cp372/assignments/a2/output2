@@ -1,0 +1,97 @@
+Network Simulator
+Initializing Network Simulator
+Initializing sender: A: 12345
+Initializing receiver: B: 67890
+average = 0.5033190011370157
+---------------------------------------
+A: Sending the data aaaaaaaaaaaaaaaaaaaa
+udtSend: seqNum: 0 ackNum: 0 checksum: 1940 payload: aaaaaaaaaaaaaaaaaaaa
+startTimer: starting timer at 319.769522450404
+---------------------------------------
+B: Receiving the data and sending the acknowledgement aaaaaaaaaaaaaaaaaaaa
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 0 checksum: 0 payload: 
+udtSend: SIMULATING PACKET LOSS
+---------------------------------------
+A: sending the last packet again
+udtSend: seqNum: 0 ackNum: 0 checksum: 1940 payload: aaaaaaaaaaaaaaaaaaaa
+udtSend: SIMULATING PACKET LOSS
+startTimer: starting timer at 339.769522450404
+---------------------------------------
+A: sending the last packet again
+udtSend: seqNum: 0 ackNum: 0 checksum: 1940 payload: aaaaaaaaaaaaaaaaaaaa
+startTimer: starting timer at 379.769522450404
+---------------------------------------
+B: Receiving the data and sending the acknowledgement aaaaaaaaaaaaaaaaaaaa
+udtSend: seqNum: 0 ackNum: 0 checksum: 0 payload: 
+---------------------------------------
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 392.4400364983067
+---------------------------------------
+A: Sending the data bbbbbbbbbbbbbbbbbbbb
+udtSend: seqNum: 1 ackNum: 0 checksum: 1961 payload: bbbbbbbbbbbbbbbbbbbb
+udtSend: SIMULATING PACKET LOSS
+startTimer: starting timer at 1770.2799531429464
+---------------------------------------
+A: sending the last packet again
+udtSend: seqNum: 1 ackNum: 0 checksum: 1961 payload: bbbbbbbbbbbbbbbbbbbb
+startTimer: starting timer at 1790.2799531429464
+---------------------------------------
+B: Receiving the data and sending the acknowledgement bbbbbbbbbbbbbbbbbbbb
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+---------------------------------------
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 1805.8708721510025
+---------------------------------------
+A: Sending the data cccccccccccccccccccc
+udtSend: seqNum: 0 ackNum: 0 checksum: 1980 payload: cccccccccccccccccccc
+startTimer: starting timer at 2032.285780333104
+---------------------------------------
+B: Receiving the data and sending the acknowledgement cccccccccccccccccccc
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 0 checksum: 0 payload: 
+---------------------------------------
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 2040.399836840226
+---------------------------------------
+A: Sending the data dddddddddddddddddddd
+udtSend: seqNum: 1 ackNum: 0 checksum: 2001 payload: dddddddddddddddddddd
+startTimer: starting timer at 3889.0520513652646
+---------------------------------------
+B: Receiving the data and sending the acknowledgement dddddddddddddddddddd
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: SIMULATING PACKET LOSS
+---------------------------------------
+A: sending the last packet again
+udtSend: seqNum: 1 ackNum: 0 checksum: 2001 payload: dddddddddddddddddddd
+startTimer: starting timer at 3909.0520513652646
+---------------------------------------
+B: Receiving the data and sending the acknowledgement dddddddddddddddddddd
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+---------------------------------------
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 3925.5433972002616
+---------------------------------------
+A: Sending the data eeeeeeeeeeeeeeeeeeee
+udtSend: seqNum: 0 ackNum: 0 checksum: 2020 payload: eeeeeeeeeeeeeeeeeeee
+udtSend: SIMULATING PACKET LOSS
+startTimer: starting timer at 4530.267881486028
+do not schedule: the maximum number of messages is scheduled
+---------------------------------------
+A: sending the last packet again
+udtSend: seqNum: 0 ackNum: 0 checksum: 2020 payload: eeeeeeeeeeeeeeeeeeee
+udtSend: SIMULATING PACKET LOSS
+startTimer: starting timer at 4550.267881486028
+---------------------------------------
+A: sending the last packet again
+udtSend: seqNum: 0 ackNum: 0 checksum: 2020 payload: eeeeeeeeeeeeeeeeeeee
+startTimer: starting timer at 4590.267881486028
+---------------------------------------
+B: Receiving the data and sending the acknowledgement eeeeeeeeeeeeeeeeeeee
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 0 checksum: 0 payload: 
+---------------------------------------
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 4603.861946669949
