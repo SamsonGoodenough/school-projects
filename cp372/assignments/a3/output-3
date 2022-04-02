@@ -1,0 +1,151 @@
+Initializing Network Simulator
+average = 0.5033190011370157
+
+TOLAYER2: source: 0 dest: 1: costs: 0 2 7 
+
+TOLAYER2: source: 0 dest: 2: costs: 0 2 7 
+
+TOLAYER2: source: 1 dest: 0: costs: 2 0 1 
+
+TOLAYER2: source: 1 dest: 2: costs: 2 0 1 
+
+TOLAYER2: source: 2 dest: 0: costs: 7 1 0 
+
+TOLAYER2: source: 2 dest: 1: costs: 7 1 0 
+
+Initial Distance Tables:
+   D0 |    0     1     2   
+  ----|-------------------
+     0|    0     2     7   
+     1|  999     0   999   
+     2|  999   999     0   
+
+   D1 |    0     1     2   
+  ----|-------------------
+     0|    0   999   999   
+     1|    2     0     1   
+     2|  999   999     0   
+
+   D2 |    0     1     2   
+  ----|-------------------
+     0|    0   999   999   
+     1|  999     0   999   
+     2|    7     1     0   
+
+
+MAIN: receive event, time=2.438962851026818at 1
+Node 1 Received a packet from Node 0
+Event Type:  FROM_LAYER2   src: 0  dest: 1  contents: 0   2   7   
+
+MAIN: receive event, time=8.291882996735177at 2
+Node 2 Received a packet from Node 0
+Event Type:  FROM_LAYER2   src: 0  dest: 2  contents: 0   2   7   
+
+MAIN: receive event, time=16.715109352455862at 0
+Node 0 Received a packet from Node 1
+Event Type:  FROM_LAYER2   src: 1  dest: 0  contents: 2   0   1   
+
+TOLAYER2: source: 0 dest: 1: costs: 0 2 3 
+   D0 |    0     1     2   
+  ----|-------------------
+     0|    0     2     3   
+     1|    2     0     1   
+     2|  999   999     0   
+
+
+TOLAYER2: source: 0 dest: 2: costs: 0 2 3 
+   D0 |    0     1     2   
+  ----|-------------------
+     0|    0     2     3   
+     1|    2     0     1   
+     2|  999   999     0   
+
+
+MAIN: receive event, time=19.014362247418074at 2
+Node 2 Received a packet from Node 1
+Event Type:  FROM_LAYER2   src: 1  dest: 2  contents: 2   0   1   
+
+TOLAYER2: source: 2 dest: 0: costs: 3 1 0 
+   D2 |    0     1     2   
+  ----|-------------------
+     0|    0     2     7   
+     1|    2     0     1   
+     2|    3     1     0   
+
+
+TOLAYER2: source: 2 dest: 1: costs: 3 1 0 
+   D2 |    0     1     2   
+  ----|-------------------
+     0|    0     2     7   
+     1|    2     0     1   
+     2|    3     1     0   
+
+
+MAIN: receive event, time=26.541659185534513at 0
+Node 0 Received a packet from Node 2
+Event Type:  FROM_LAYER2   src: 2  dest: 0  contents: 7   1   0   
+
+MAIN: receive event, time=30.00685135447312at 1
+Node 1 Received a packet from Node 2
+Event Type:  FROM_LAYER2   src: 2  dest: 1  contents: 7   1   0   
+
+MAIN: receive event, time=100000.0at 0
+INTERNAL: 147 PANIC: Unknown event type
+
+MAIN: receive event, time=200000.0at 0
+INTERNAL: 147 PANIC: Unknown event type
+
+MAIN: receive event, time=200002.00307784637at 1
+Node 1 Received a packet from Node 0
+Event Type:  FROM_LAYER2   src: 0  dest: 1  contents: 0   2   3   
+
+MAIN: receive event, time=200010.29128794873at 2
+Node 2 Received a packet from Node 0
+Event Type:  FROM_LAYER2   src: 0  dest: 2  contents: 0   2   3   
+
+MAIN: receive event, time=200011.81344877876at 0
+Node 0 Received a packet from Node 2
+Event Type:  FROM_LAYER2   src: 2  dest: 0  contents: 3   1   0   
+
+MAIN: receive event, time=200016.59043227523at 1
+Node 1 Received a packet from Node 2
+Event Type:  FROM_LAYER2   src: 2  dest: 1  contents: 3   1   0   
+
+Simulator terminated at t=200016.59043227523 no packets in medium
+
+distance Table for node 0 
+
+   D0 |    0     1     2   
+  ----|-------------------
+     0|    0     2     3   
+     1|    2     0     1   
+     2|    3     1     0   
+
+Path to reach other nodes: [0, 1, 1]
+
+
+
+distance Table for node 1 
+
+   D1 |    0     1     2   
+  ----|-------------------
+     0|    0     2     3   
+     1|    2     0     1   
+     2|    3     1     0   
+
+Path to reach other nodes: [0, 1, 2]
+
+
+
+distance Table for node 2 
+
+   D2 |    0     1     2   
+  ----|-------------------
+     0|    0     2     3   
+     1|    2     0     1   
+     2|    3     1     0   
+
+Path to reach other nodes: [1, 1, 2]
+
+
+
