@@ -4,6 +4,9 @@ The following is labs, assignments, and some other resourses that I've collected
 *Warning, although I've done quite well in Computer Science not all of this is necessarily correct.*
 Included us a Dockerfile used to run Ubuntu for C.
 ***
+## Notes
+CP386 | Operating Systems
+- [Chapter 10](/cp386/notes/CP386%20%C7%80%20Chapter%2010%20%C7%80%20Virtual%20Memory.md)
 ## CP216: Labs - Winter 2021
 ### The Labs ([cpulator](https://cpulator.01xz.net/?sys=arm-de1soc))
 | Week | Starting | Lab | Posted |
